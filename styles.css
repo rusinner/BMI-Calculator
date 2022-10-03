@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(247, 245, 245);
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 20rem;
+  height: 25rem;
+  box-shadow: 3px 3px 3px #ccc, -3px -3px 3px white;
+  border-radius: 25px;
+  padding: 15px;
+}
+.container .title {
+  text-align: center;
+  font-size: 18px;
+}
+.container .title::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  margin-top: 15px;
+  background-color: rgb(244, 174, 44);
+}
+.container .wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.container .wrapper .height-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+.container .wrapper .height-wrap .icon-wrap {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 3px 3px 3px #ccc, -3px -3px 3px white;
+}
+.container .wrapper .height-wrap .icon {
+  font-size: 25px;
+  color: rgb(0, 140, 255);
+}
+.container .wrapper .height-wrap .input {
+  width: 130px;
+  height: 50px;
+  margin-left: 10px;
+  border: none;
+  padding: 0 5px;
+  border-radius: 15px;
+  font-size: 18px;
+  box-shadow: 3px 3px 3px #ccc, -3px -3px 3px white;
+  background: transparent;
+}
+.container .wrapper .height-wrap .input::-moz-placeholder {
+  font-size: 18px;
+  text-align: center;
+}
+.container .wrapper .height-wrap .input:-ms-input-placeholder {
+  font-size: 18px;
+  text-align: center;
+}
+.container .wrapper .height-wrap .input::placeholder {
+  font-size: 18px;
+  text-align: center;
+}
+.container .wrapper .height-wrap .input:focus {
+  color: rgb(0, 140, 255);
+  box-shadow: 0 0 5px rgb(0, 140, 255);
+}
+.container .wrapper .height-wrap .select {
+  margin-left: 10px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 2px 2px 2px #ccc, -2px -2px 2px white;
+  padding: 0 10px;
+  border-radius: 15px;
+  font-size: 18px;
+  color: #4a4b4d;
+}
+.container .wrapper .btn {
+  border: none;
+  background-color: rgb(26, 166, 26);
+  padding: 15px 25px;
+  border-radius: 25px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.container .wrapper .btn:hover {
+  background-color: rgb(131, 222, 131);
+}
+
+.dialog {
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  position: fixed;
+  background-color: rgb(247, 245, 245);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dialog .result-icon-wrap {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  box-shadow: 2px 2px 2px rgb(223, 223, 223), -2px -2px 2px white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.dialog .result-icon-wrap i {
+  font-size: 50px;
+}
+.dialog .result-icon-wrap .normal {
+  color: rgb(26, 166, 26);
+}
+
+.dialog-btn {
+  width: 100px;
+  padding: 10px 15px;
+  background-color: rgb(0, 140, 255);
+  align-self: center;
+  margin-top: 25px;
+}
+.dialog-btn:hover {
+  background-color: rgb(0, 122, 223);
+}
+
+.dialog-title {
+  font-size: 25px;
+  text-align: center;
+}
+
+.res {
+  margin-top: 10px;
+}
+
+.dialog-container {
+  height: 260px;
+}/*# sourceMappingURL=styles.css.map */
