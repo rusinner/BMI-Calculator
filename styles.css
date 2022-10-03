@@ -125,6 +125,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 .dialog .result-icon-wrap {
   width: 70px;
@@ -166,4 +167,12 @@ body {
 
 .dialog-container {
   height: 260px;
+}
+
+.display {
+  display: flex;
+}
+
+.danger {
+  color: red;
 }/*# sourceMappingURL=styles.css.map */
